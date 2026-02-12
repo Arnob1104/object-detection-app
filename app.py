@@ -15,19 +15,7 @@ import warnings
 warnings.filterwarnings("ignore", category=UserWarning)
 warnings.filterwarnings("ignore", category=FutureWarning)
 
-# Try to import OpenCV with better error handling
-try:
-    import cv2
-except ImportError as e:
-    import subprocess
-    import sys
-    
-    # Try to install opencv-python-headless if not available
-    try:
-        subprocess.check_call([sys.executable, "-m", "pip", "install", "opencv-python-headless==4.8.0.76"])
-        import cv2
-    except Exception:
-        raise ImportError(f"OpenCV installation failed. Error: {e}")
+import cv2
 
 # Torch path workaround BEFORE torch import
 try:
