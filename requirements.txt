@@ -1,10 +1,10 @@
 --extra-index-url https://download.pytorch.org/whl/cpu
-streamlit==1.38.0
-opencv-python-headless==4.10.0.84
-numpy==1.26.4
-Pillow==10.4.0
-ultralytics==8.2.103
-pandas==2.2.3
-nest-asyncio==1.6.0
-torch==2.3.1+cpu
-torchvision==0.18.1+cpu
+streamlit>=1.40
+opencv-python-headless
+numpy
+Pillow
+pandas
+ultralytics
+nest-asyncio
+torch
+torchvision
