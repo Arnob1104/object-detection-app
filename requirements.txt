@@ -1,5 +1,6 @@
 --extra-index-url https://download.pytorch.org/whl/cpu
-streamlit>=1.40
+streamlit>=1.40,<1.50
+pyarrow<25
 opencv-python-headless
 numpy
 Pillow
